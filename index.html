@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Khalid | AI & Automation Enthusiast</title>
-    <!-- Google Fonts & FontAwesome -->
+    <title>Ahmed Khalid | Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
+            --bg-color: #0b0f19;
+            --card-bg: #151c2c;
+            --card-border: #232d42;
+            --text-primary: #f1f5f9;
             --text-secondary: #94a3b8;
-            --accent-color: #38bdf8;
+            --accent: #38bdf8;
             --accent-hover: #0284c7;
-            --border-color: #334155;
         }
 
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         body {
@@ -35,456 +34,403 @@
             padding-bottom: 60px;
         }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header / Navbar */
         header {
-            padding: 20px 0;
-            border-bottom: 1px solid var(--border-color);
             position: sticky;
             top: 0;
-            background-color: rgba(15, 23, 42, 0.9);
-            backdrop-filter: blur(10px);
-            z-index: 100;
+            background-color: rgba(11, 15, 25, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--card-border);
+            z-index: 1000;
         }
 
         nav {
-            display: flex;
-            justify-أكيد يا أحمد! هساعدك تظبطه وتحوله من كود خفيف وبسيط إلى **بورتفوليو بروفيشنال يبرز مهاراتك بشكل أنيق ومؤثر**.
-
-جهّزت لك **كود كامل وجاهز بالكامل (Single-Page Template)** متناسق مع بياناتك وسيرتك الذاتية، فيه الميزات التالية:
-1. **تصميم عصري ومتجاوب (Dark Theme + Modern UI):** مريح للعين وبيشتغل على الموبايل والـ Desktop.
-2. **بدون Base64 ثقيل:** استبدال الصورة بـ Path أو صورة رمزية خفيفة.
-3. **أقسام مرتبة:**
-   * **Hero Section:** تعريف بك كـ *CCE Student & AI Automation Enthusiast*.
-   * **نبذة عني (About Me):** مع زرار لتحميل السيرة الذاتية.
-   * **التدريبات والشهادات (Experience & Training):** يبرز DEPI و Huawei ICT Academy و CS50x.
-   * **المهارات (Skills):** مقسمة لكروت تفاعلية.
-   * **المشاريع (Projects):** مع روابط لكود GitHub.
-   * **التواصل (Contact):** روابط واضحة لـ LinkedIn, GitHub, والإيميل.
-
----
-
-### 💻 الكود الجاهز (`index.html`):
-
-استبدل المحتوى الموجود في ملف `index.html` في مستودع GitHub عندك بهذا الكود:
-
-```html
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Khalid | AI & Automation Enthusiast</title>
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
-    <!-- Google Fonts -->
-    <link href="[https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap](https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap)" rel="stylesheet">
-    
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --accent-color: #38bdf8;
-            --accent-hover: #0284c7;
-            --text-main: #f8fafc;
-            --text-muted: #94a3b8;
-            --border-color: #334155;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Tajawal', sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        nav {
+            max-width: 1000px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.5rem 8%;
-            background-color: rgba(15, 23, 42, 0.9);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid var(--border-color);
+            padding: 1.2rem 1.5rem;
         }
 
         .logo {
-            font-size: 1.4rem;
+            font-size: 1.25rem;
             font-weight: 800;
-            color: var(--accent-color);
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
         }
 
         .nav-links {
             display: flex;
+            gap: 1.8rem;
             list-style: none;
-            gap: 2rem;
         }
 
         .nav-links a {
-            color: var(--text-main);
+            color: var(--text-secondary);
             text-decoration: none;
+            font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.3s;
+            transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: var(--accent-color);
+            color: var(--accent);
         }
 
-        section {
-            padding: 6rem 8% 4rem;
-            max-width: 1200px;
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 0 1.5rem;
         }
 
-        /* Hero Section */
         .hero {
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 2rem;
-            flex-wrap: wrap-reverse;
+            padding: 5rem 0 3rem;
         }
 
-        .hero-text {
-            flex: 1;
-            min-width: 300px;
+        .hero-badge {
+            display: inline-block;
+            padding: 0.35rem 0.85rem;
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            border: 1px solid rgba(56, 189, 248, 0.2);
         }
 
-        .hero-text h1 {
-            font-size: 2.8rem;
+        .hero h1 {
+            font-size: 3rem;
             font-weight: 800;
+            line-height: 1.2;
             margin-bottom: 1rem;
+            letter-spacing: -1px;
         }
 
-        .hero-text h1 span {
-            color: var(--accent-color);
-        }
-
-        .hero-text p {
-            color: var(--text-muted);
-            font-size: 1.2rem;
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 650px;
             margin-bottom: 2rem;
         }
 
-        .btn-group {
+        .cta-btns {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
+            align-items: center;
         }
 
         .btn {
-            padding: 0.8rem 1.8rem;
-            border-radius: 8px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s;
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
         }
 
         .btn-primary {
-            background-color: var(--accent-color);
-            color: #000;
+            background-color: var(--accent);
+            color: #0b0f19;
         }
 
         .btn-primary:hover {
             background-color: var(--accent-hover);
-            color: #fff;
+            color: #ffffff;
         }
 
-        .btn-outline {
-            border: 2px solid var(--accent-color);
-            color: var(--accent-color);
+        .btn-secondary {
+            background-color: var(--card-bg);
+            color: var(--text-primary);
+            border: 1px solid var(--card-border);
         }
 
-        .btn-outline:hover {
-            background-color: var(--accent-color);
-            color: #000;
+        .btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
         }
 
-        .hero-img {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            min-width: 280px;
+        section {
+            padding: 3rem 0;
         }
 
-        .avatar-box {
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            border: 4px solid var(--accent-color);
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            background-color: var(--card-bg);
-            font-size: 5rem;
-            color: var(--accent-color);
-            box-shadow: 0 0 25px rgba(56, 189, 248, 0.2);
+            gap: 0.5rem;
         }
 
-        /* Section Titles */
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 2.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            right: 0;
-            width: 60%;
-            height: 4px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
-
-        /* Cards & Grid */
-        .grid {
+        .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
         }
 
         .card {
             background-color: var(--card-bg);
-            padding: 1.8rem;
+            border: 1px solid var(--card-border);
             border-radius: 12px;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s, border-color 0.3s;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-color);
+            border-color: rgba(56, 189, 248, 0.4);
+            transform: translateY(-2px);
         }
 
         .card h3 {
-            color: var(--accent-color);
-            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .card .subtitle {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
         }
 
         .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
         }
 
-        /* Tags */
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
+            gap: 0.4rem;
             margin-top: 1rem;
         }
 
         .tag {
-            background-color: rgba(56, 189, 248, 0.1);
-            color: var(--accent-color);
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.85rem;
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Social Icons */
-        .socials {
-            display: flex;
-            gap: 1.2rem;
-            margin-top: 1.5rem;
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-top: 1.2rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 600;
         }
 
-        .socials a {
-            color: var(--text-main);
-            font-size: 1.5rem;
-            transition: color 0.3s;
+        .project-link:hover {
+            text-decoration: underline;
         }
 
-        .socials a:hover {
-            color: var(--accent-color);
+        .contact-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
         }
 
         footer {
+            margin-top: 4rem;
             text-align: center;
-            padding: 2rem;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--card-border);
+            padding-top: 2rem;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2.2rem; }
             .nav-links { display: none; }
-            .hero-text h1 { font-size: 2.2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">أحمد خالد</div>
-        <ul class="nav-links">
-            <li><a href="#about">عنّي</a></li>
-            <li><a href="#training">التدريب</a></li>
-            <li><a href="#skills">المهارات</a></li>
-            <li><a href="#projects">المشاريع</a></li>
-            <li><a href="#contact">التواصل</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <a href="#" class="logo">Ahmed<span>.Khalid</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>أهلاً، أنا <span>أحمد خالد</span> 👋</h1>
-            <p>طالب هندسة الاتصالات والحاسبات بجامعة المنصورة | مهتم بذكاء الآلة، الأتمتة (AI Automation) وحل المشكلات التنافسية.</p>
-            <div class="btn-group">
-                <a href="[https://drive.google.com/file/d/1i3ZDRxIOVix5XJ_oKv4spc0DsQrb7B67/view?usp=drivesdk](https://drive.google.com/file/d/1i3ZDRxIOVix5XJ_oKv4spc0DsQrb7B67/view?usp=drivesdk)" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-file-download"></i> السيرة الذاتية (CV)
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <span class="hero-badge">Computer & Communications Engineering Student</span>
+            <h1>Hi, I'm Ahmed Khalid Anwar</h1>
+            <p>Passionate about AI Automation, Machine Learning, and Workflow Integration. Currently building efficient solutions with Python, C, SQL, and AI agents.</p>
+            <div class="cta-btns">
+                <a href="https://drive.google.com/file/d/1i3ZDRxIOVix5XJ_oKv4spc0DsQrb7B67/view?usp=drivesdk" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-file-pdf"></i> Download Resume
                 </a>
-                <a href="#contact" class="btn btn-outline">
-                    <i class="fas fa-envelope"></i> تواصل معي
+                <a href="https://github.com/engahmedkhalid2006-ctrl" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-github"></i> GitHub
                 </a>
-            </div>
-            <div class="socials">
-                <a href="[https://github.com/engahmedkhalid2006-ctrl](https://github.com/engahmedkhalid2006-ctrl)" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="[https://linkedin.com/in/ahmed-khalid-6a5666414](https://linkedin.com/in/ahmed-khalid-6a5666414)" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:engahmedkhalid2006@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="hero-img">
-            <div class="avatar-box">
-                <i class="fas fa-user-gear"></i>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">نبذة عني</h2>
-        <div class="card">
-            <p>
-                أدرس هندسة الاتصالات والحاسبات (CCE) بجامعة المنصورة (متوقع التخرج 2029). أمتلك شغفاً قوياً ببناء الحلول الذكية وأتمتة مسارات العمل (AI Workflows)، إلى جانب أساس أكاديمي متين في الخوارزميات، هياكل البيانات، والرياضيات المتقدمة للذكاء الاصطناعي.
-            </p>
-        </div>
-    </section>
-
-    <!-- Training & Education -->
-    <section id="training">
-        <h2 class="section-title">التدريب والشهادات</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>DEPI - AI Automation Track</h3>
-                <p>مبادرة رواد مصر الرقمية - دراسة وتطبيق مفاهيم AI Agents، وأتمتة مسارات العمل باستخدام n8n و REST APIs.</p>
-            </div>
-            <div class="card">
-                <h3>Huawei ICT Academy - HCIA-AI</h3>
-                <p>دراسة التعلم الآلي والأسس الرياضية (الجبر الخطي، المصفوفات، وتحسين النماذج).</p>
-            </div>
-            <div class="card">
-                <h3>HarvardX - CS50x</h3>
-                <p>مقدمة جامعة هارفارد في علوم الحاسب - بناء حلول برمجية قوية باستخدام C و Python و SQL.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">المهارات التقنية</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>لغات البرمجة</h3>
-                <div class="tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">C</span>
-                    <span class="tag">SQL</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3>الذكاء الاصطناعي والأتمتة</h3>
-                <div class="tags">
-                    <span class="tag">AI Agents</span>
-                    <span class="tag">n8n Automation</span>
-                    <span class="tag">Machine Learning Basics</span>
-                    <span class="tag">REST APIs</span>
-                </div>
-            </div>
-            <div class="card">
-                <h3>أدوات وقواعد البيانات</h3>
-                <div class="tags">
-                    <span class="tag">Git & GitHub</span>
-                    <span class="tag">SQLite</span>
-                    <span class="tag">MySQL Basics</span>
-                    <span class="tag">Linux Terminal</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">المشاريع والأعمال</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>CS50x Algorithmic Solutions</h3>
-                <p>تطبيق خوارزميات البحث والترتيب وهياكل البيانات بلغة C و Python مع مراعاة كفاءة الذاكرة والأداء.</p>
-                <div class="tags" style="margin-bottom: 1rem;">
-                    <span class="tag">C</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">Data Structures</span>
-                </div>
-                <a href="[https://github.com/engahmedkhalid2006-ctrl](https://github.com/engahmedkhalid2006-ctrl)" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 700;">
-                    عرض المشروع على GitHub <i class="fas fa-arrow-left"></i>
+                <a href="https://linkedin.com/in/ahmed-khalid-6a5666414" target="_blank" class="btn btn-secondary">
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title"><i class="fas fa-user"></i> About Me</h2>
             <div class="card">
-                <h3>Relational Database Querying</h3>
-                <p>تصميم وإدارة الاستعلامات والمعاملات المعقدة لقواعد البيانات باستخدام SQL و SQLite.</p>
-                <div class="tags" style="margin-bottom: 1rem;">
-                    <span class="tag">SQL</span>
-                    <span class="tag">SQLite</span>
-                    <span class="tag">Database Design</span>
+                <p>Engineering student at Mansoura University specializing in Communication and Computer Engineering (Expected 2029). Focused on hands-on AI automation, mathematical foundations for machine learning, algorithms, and computational logic.</p>
+            </div>
+        </section>
+
+        <!-- Training Section -->
+        <section id="training">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Professional Training</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>DEPI - AI Automation Track</h3>
+                    <div class="subtitle">Digital Egypt Pioneers Initiative</div>
+                    <p>Studying workflow automation, n8n integration, REST APIs, and building fundamental AI agents.</p>
                 </div>
-                <a href="[https://github.com/engahmedkhalid2006-ctrl](https://github.com/engahmedkhalid2006-ctrl)" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 700;">
-                    عرض المشروع على GitHub <i class="fas fa-arrow-left"></i>
+                <div class="card">
+                    <h3>Huawei ICT Academy</h3>
+                    <div class="subtitle">HCIA-AI Training</div>
+                    <p>Focusing on linear algebra, supervised/unsupervised machine learning models, and deep learning core concepts.</p>
+                </div>
+                <div class="card">
+                    <h3>CS50x Computer Science</h3>
+                    <div class="subtitle">HarvardX / edX</div>
+                    <p>Rigorous computer science logic, algorithms, data structures, and memory management using C and Python.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title"><i class="fas fa-code"></i> Technical Skills</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Languages</h3>
+                    <p>Core programming foundations for logic and data handling.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C Language</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>AI & Automation</h3>
+                    <p>Workflows, agent design, and API integrations.</p>
+                    <div class="tags">
+                        <span class="tag">AI Agents</span>
+                        <span class="tag">n8n</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Machine Learning</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Tools & Databases</h3>
+                    <p>Development environment and data persistence.</p>
+                    <div class="tags">
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Linux Terminal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title"><i class="fas fa-folder-open"></i> Projects</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>CS50x Algorithmic Solutions</h3>
+                    <p>Implementation of sorting algorithms, hash tables, linked lists, and computational logic in C and Python with optimized memory management.</p>
+                    <div class="tags">
+                        <span class="tag">C</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Structures</span>
+                    </div>
+                    <a href="https://github.com/engahmedkhalid2006-ctrl" target="_blank" class="project-link">
+                        View Repository <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Relational Database Management</h3>
+                    <p>Designing relational database schemas, complex multi-table JOINs, filtering, and data aggregations using SQL and SQLite.</p>
+                    <div class="tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">Database Design</span>
+                    </div>
+                    <a href="https://github.com/engahmedkhalid2006-ctrl" target="_blank" class="project-link">
+                        View Repository <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact-box">
+                <h3>Get In Touch</h3>
+                <p>Looking for collaboration, internship, or automation project inquiries? Feel free to reach out!</p>
+                <a href="mailto:engahmedkhalid2006@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Send Email
                 </a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">تواصل معي</h2>
-        <div class="card" style="text-align: center; padding: 3rem 1rem;">
-            <h3>هل لديك فرصة تدريب أو مشروع أتمتة؟</h3>
-            <p style="margin-bottom: 1.5rem;">أرحب دائماً بالتواصل للعمل على مشاريع جديدة أو مناقشة أفكار تقنية.</p>
-            <a href="mailto:engahmedkhalid2006@gmail.com" class="btn btn-primary">
-                <i class="fas fa-paper-plane"></i> أرسل إيميل مباشر
-            </a>
-        </div>
-    </section>
+        <footer>
+            <p>© 2026 Ahmed Khalid Anwar Abdelfattah. All rights reserved.</p>
+        </footer>
 
-    <footer>
-        <p>© 2026 أحمد خالد أنور. جميع الحقوق محفوظة.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
